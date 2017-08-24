@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Moringa Bank</title>
+  </head>
+  <body class="container">
+    <header>
+      <h1>Moringa Bank</h1>
+    </header>
+    <nav>
+      <p>Welcome <span id="clientName"></span></p>
+    </nav>
+    <main>
+      <div class="row">
+        <form class=" form-group">
+        <section class="col-md-6 accountRegistration">
+          <h3>Register New Account</h3>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" class="form-control">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" class="form-control" >
+            <label for="initialDeposit">Initial Deposit</label>
+            <input type="number" id="initialDeposit" class="form-control" >
+          <button type="submit" class="btn btn-primary form-control" id="newClient">Register Account</button>
+        </section>
+        <section class="col-md-6 fundTransactions">
+          <h3>Deposit or Withdraw Funds</h3>
+          <label for="deposit">Deposit</label>
+          <input type="number" class="form-control" id="deposit">
+          <button type="submit" class="btn btn-primary form-control" id="submitDeposit">Deposit</button>
+          <label for="withdraw">Withdraw</label>
+          <input type="number" class="form-control" id="withdraw">
+          <button type="submit" class="btn btn-primary form-control" id="submitWithdrawal">Withdraw</button>
+        </section>
+      </div>
+        <section>
+          <h4>Current Balance</h4>
+          <p id="balance" class="form-control"></p>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
