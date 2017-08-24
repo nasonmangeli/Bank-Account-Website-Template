@@ -9,11 +9,11 @@
     <title>Moringa Bank</title>
   </head>
   <body class="container">
-    <header>
+    <header class="jumbotron">
       <h1>Moringa Bank</h1>
     </header>
-    <nav>
-      <p>Welcome <span id="clientName"></span></p>
+    <nav class="well">
+      <h4>Welcome, <span id="clientName"></span></h4>
     </nav>
     <main>
       <div class="row">
@@ -33,13 +33,13 @@
           <label for="deposit">Deposit</label>
           <input type="number" class="form-control" id="deposit">
           <button type="submit" class="btn btn-primary form-control" id="submitDeposit">Deposit</button>
-          <label for="withdraw">Withdraw</label>
+          <br><label for="withdraw">Withdraw</label>
           <input type="number" class="form-control" id="withdraw">
           <button type="submit" class="btn btn-primary form-control" id="submitWithdrawal">Withdraw</button>
         </section>
       </div>
-        <section>
-          <h4>Current Balance</h4>
+        <section class="balanceDisplay">
+          <h3>Current Balance</h3>
           <p id="balance" class="form-control"></p>
         </section>
       </form>
