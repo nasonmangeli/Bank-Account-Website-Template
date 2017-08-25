@@ -17,7 +17,7 @@
     </nav>
     <main>
       <div class="row">
-        <form class=" form-group">
+        <form class="form-group" id="newAccount">
         <section class="col-md-6 accountRegistration">
           <h3>Register New Account</h3>
             <label for="firstName">First Name</label>
@@ -28,19 +28,26 @@
             <input type="number" id="initialDeposit" class="form-control" >
           <button type="submit" class="btn btn-primary form-control" id="newClient">Register Account</button>
         </section>
+      </form>
         <section class="col-md-6 fundTransactions">
           <h3>Deposit or Withdraw Funds</h3>
+          <form id="depositTransaction">
           <label for="deposit">Deposit</label>
           <input type="number" class="form-control" id="deposit">
           <button type="submit" class="btn btn-primary form-control" id="submitDeposit">Deposit</button>
+        </form>
           <br><label for="withdraw">Withdraw</label>
+          <form id="withdrawalTransaction">
           <input type="number" class="form-control" id="withdraw">
           <button type="submit" class="btn btn-primary form-control" id="submitWithdrawal">Withdraw</button>
+        </form>
         </section>
       </div>
-        <section class="balanceDisplay">
+      <section>
           <h3>Current Balance</h3>
-          <p id="balance" class="form-control"></p>
+        <div class="balanceDisplay">
+
+        </div>
         </section>
       </form>
     </main>
